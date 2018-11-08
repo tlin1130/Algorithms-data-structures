@@ -11,9 +11,9 @@ Queue_array.c is an array implemtation of queue that stores an int item.
 
 // A structure to represent a queue
 typedef struct Queue{
-	int front;
-	int rear;
-	int size;
+    int front;
+    int rear;
+    int size;
     int capacity;
     int* array;
 }Queue;
