@@ -92,10 +92,10 @@ void printQueue(Queue* queue){
     int i;
     i = queue->front;
     while(i != queue->rear){
-        printf("item: %d, ", queue->array[i]);   
+        printf("[%d, ", queue->array[i]);   
         i = (i + 1) % queue->capacity;
     }
-    printf("item: %d\n", queue->array[queue->rear]);
+    printf("%d]\n", queue->array[queue->rear]);
 }
 
 // main function to test queue operations
