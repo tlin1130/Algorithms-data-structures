@@ -101,12 +101,13 @@ void printQueue(Queue* queue){
 // main function to test queue operations
 int main(){
 
-    Queue* q = createQueue(5); 
-    enqueue(q, 10); 
-    enqueue(q, 20); 
-    enqueue(q, 30); 
-    enqueue(q, 40);
-    enqueue(q, 50);
+    Queue* q = createQueue(10);
+    int i;
+    int j = 10;
+    for (i = 0; i < 10; i++){
+        enqueue(q, j);
+        j+= 10;
+    }
     dequeue(q);
     dequeue(q);
     enqueue(q, 10); 
