@@ -91,8 +91,9 @@ void printQueue(Queue* queue){
     printf("Size of queue: %d\n", queue->size);
     int i;
     i = queue->front;
+    printf("[");
     while(i != queue->rear){
-        printf("[%d, ", queue->array[i]);   
+        printf("%d, ", queue->array[i]);   
         i = (i + 1) % queue->capacity;
     }
     printf("%d]\n", queue->array[queue->rear]);
